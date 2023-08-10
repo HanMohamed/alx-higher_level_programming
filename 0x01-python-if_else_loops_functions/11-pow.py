@@ -9,10 +9,9 @@ def pow(a, b):
         a = 1 / a
         b = b * -1
 
-    i = 1
     result = a
-
-    while i < b:
+    while b > 1:
         result = result * a
         b = b - 1
+
     return result
