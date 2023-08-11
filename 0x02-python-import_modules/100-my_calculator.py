@@ -13,11 +13,11 @@ b = int(sys.argv[4])
 sign = str(sys.argv[3])
 
 match sign:
-    case "+":
+    case '+':
         print("{0} + {1} = {2}".format(a, b, add(a, b)))
-    case "-":
+    case '-':
         print("{0} - {1} = {2}".format(a, b, sub(a, b)))
-    case "*":
+    case '*':
         print("{0} * {1} = {2}".format(a, b, mul(a, b)))
-    case "/":
+    case '/':
         print("{0} / {1} = {2}".format(a, b, div(a, b)))
