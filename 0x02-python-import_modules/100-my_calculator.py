@@ -10,7 +10,7 @@ if len(sys.argv != 4):
 
 a = int(sys.argv[2])
 b = int(sys.argv[4])
-sign = str(sys.argv[3])
+sign = sys.argv[3]
 
 match sign:
     case '+':
