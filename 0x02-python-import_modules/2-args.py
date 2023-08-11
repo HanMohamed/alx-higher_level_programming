@@ -12,6 +12,6 @@ elif num == 1:
     print("{}: {}".format(1, sys.argv[1]))
 
 else:
-    print("{} argumens:".format(num))
+    print("{} arguments:".format(num))
     for i in range(0, num):
         print("{}: {}".format(i + 1, sys.argv[i + 1]))
