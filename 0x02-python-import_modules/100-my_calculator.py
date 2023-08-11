@@ -4,20 +4,22 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     import sys
 
-if len(sys.argv != 4):
+if len(sys.argv) != 4:
     print("Usage: ./100-my_calculator.py <a> <operator> <b>")
     exit(1)
 
-a = int(sys.argv[2])
-b = int(sys.argv[4])
-sign = sys.argv[3]
+a = int(sys.argv[1])
+b = int(sys.argv[3])
+sign = sys.argv[2]
 
-match sign:
-    case '+':
-        print("{0} + {1} = {2}".format(a, b, add(a, b)))
-    case '-':
-        print("{0} - {1} = {2}".format(a, b, sub(a, b)))
-    case '*':
-        print("{0} * {1} = {2}".format(a, b, mul(a, b)))
-    case '/':
-        print("{0} / {1} = {2}".format(a, b, div(a, b)))
+if sign == '+':
+    print("{0} + {1} = {2}".format(a, b, add(a, b)))
+elif sign == '-':
+    print("{0} - {1} = {2}".format(a, b, sub(a, b)))
+elif sign == '*':
+    print("{0} * {1} = {2}".format(a, b, mul(a, b)))
+elif sign == '/':
+    print("{0} / {1} = {2}".format(a, b, div(a, b)))
+else:
+    print("Unknown operator. Available operators: +, -, * and /")
+    exit(1)
