@@ -2,5 +2,5 @@
 """Empty class"""
 
 """Empty class"""
-class BaseGeometry(object):
+class BaseGeometry():
     pass
