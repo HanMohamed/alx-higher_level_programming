@@ -3,4 +3,5 @@
 
 
 def print_sorted(self):
-    return
+    """ prints the list, but sorted (ascending sort) """
+    return (self)
