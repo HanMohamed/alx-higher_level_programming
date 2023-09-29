@@ -2,7 +2,7 @@
 """Define a square class"""
 
 
-class Square:
+class Rectangle:
     """ Define a square by size.
 
         Args:
