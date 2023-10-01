@@ -60,13 +60,14 @@ class Rectangle:
 
         return (2 * (self.__height + self.__width))
 
-    def print(self):
-        """ print the rectangle with the character #"""
-        for i in range(0, self.__height):
-            for j in range(0, self.__width):
-                print("#", end="")
-            print("")
-
     def __str__(self):
         """ print the rectangle with the character #"""
-        print(self)
+        if (self.__height == 0 or self.__width == 0):
+            return ("")
+        print_rect = ""
+        for i in range(0, self.__height):
+            for j in range(0, self.__width):
+                print_rect += "#"
+            if (i != self.__height - 1):
+                print_rect += "\n"
+        return (print_rect)
