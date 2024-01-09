@@ -2,8 +2,8 @@
 
 const multiLang = 'C is fun';
 const times = process.argv[2];
-console.log(times);
-if (!Number.isInteger(times)) {
+
+if (!isNaN(times)) {
   console.log('Missing number of occurrences');
 } else {
   for (let i = 0; i < times; i++) {
