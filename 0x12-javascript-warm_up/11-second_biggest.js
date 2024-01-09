@@ -3,20 +3,14 @@
 const argLength = process.argv.length;
 
 function secondBiggest () {
-  let bigger, secondBigger, argvNumb, prev;
+  let bigger, secondBigger, curr;
   bigger = parseInt(process.argv[2]);
   secondBigger = bigger;
 
   for (let i = 3; i < argLength; i++) {
-    argvNumb = parseInt(process.argv[i]);
-    bigger = argvNumb > bigger ? argvNumb : bigger;
-    prev = parseInt(process.argv[i - 1]);
-
-    if (secondBigger === bigger && argvNumb < secondBigger) {
-      secondBigger = argvNumb;
-    } else if (secondBigger < bigger && secondBigger < prev) {
-      secondBigger = prev;
-    }
+    curr = parseInt(process.argv[i]);
+    secondBigger = curr > bigger ? bigger : secondBigger;
+    bigger = curr > bigger ? curr : bigger;
   }
   console.log(secondBigger);
 }
