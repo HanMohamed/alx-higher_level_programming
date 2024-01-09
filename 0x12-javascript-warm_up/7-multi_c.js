@@ -2,7 +2,7 @@
 
 const multiLang = 'C is fun';
 const times = process.argv[2];
-
+console.log(times);
 if (!Number.isInteger(times)) {
   console.log('Missing number of occurrences');
 } else {
