@@ -9,6 +9,7 @@ function secondBiggest () {
 
   for (let i = 2; i < argLength; i++) {
     curr = parseInt(process.argv[i]);
+
     if (curr > bigger) {
       secondBigger = bigger;
       bigger = curr;
