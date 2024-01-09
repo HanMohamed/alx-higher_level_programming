@@ -14,9 +14,6 @@ function secondBiggest () {
     if (secondBigger === bigger) {
       secondBigger = curr;
     }
-    if (secondBigger < bigger && secondBigger < curr) {
-      secondBigger = curr;
-    }
   }
   console.log(secondBigger);
 }
