@@ -11,6 +11,9 @@ function secondBiggest () {
     curr = parseInt(process.argv[i]);
     secondBigger = curr > bigger ? bigger : secondBigger;
     bigger = curr > bigger ? curr : bigger;
+    if (secondBigger === bigger) {
+      secondBigger = curr;
+    }
   }
   console.log(secondBigger);
 }
