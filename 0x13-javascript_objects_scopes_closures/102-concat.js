@@ -19,14 +19,14 @@ content = fs.readFileSync(fileA, 'utf8');
 fs.appendFile(fileC, content, function (err) {
   if (err) throw err;
 });
-fs.appendFile(fileC, EOL, function (err) {
-  if (err) throw err;
-});
+// fs.appendFile(fileC, EOL, function (err) {
+//   if (err) throw err;
+// });
 
 content = fs.readFileSync(fileB, 'utf8');
 fs.appendFile(fileC, content, function (err) {
   if (err) throw err;
 });
-fs.appendFile(fileC, EOL, function (err) {
-  if (err) throw err;
-});
+// fs.appendFile(fileC, EOL, function (err) {
+//   if (err) throw err;
+// });
