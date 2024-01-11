@@ -13,7 +13,7 @@ let content;
 content = fs.readFileSync(fileA, 'utf8');
 content += '\n';
 content += fs.readFileSync(fileB, 'utf8');
-content += '\n';
+// content += '\n';
 
 fs.writeFile(fileC, content, function (err) {
   if (err) throw err;
