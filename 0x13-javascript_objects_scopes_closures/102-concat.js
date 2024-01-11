@@ -11,7 +11,7 @@ const fileC = process.argv[4];
 
 let content;
 
-fs.open(fileC, 'w', function (err) {
+fs.open(fileC, 'w+', function (err) {
   if (err) throw err;
 });
 
