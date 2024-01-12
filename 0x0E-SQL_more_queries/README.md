@@ -1,1 +1,1 @@
-Read me file alx-higher_level_programming
+Read me file 0x0E. SQL - More queries
