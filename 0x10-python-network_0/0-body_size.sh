@@ -1,2 +1,2 @@
 #!/bin/bash
-curl -s 
+curl -sI "$1"
