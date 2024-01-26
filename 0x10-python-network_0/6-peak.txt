@@ -1,2 +1,2 @@
 #Time complexty:
- O(nlog(n))
+ O(log(n))
