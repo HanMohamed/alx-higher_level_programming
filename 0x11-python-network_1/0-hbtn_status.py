@@ -1,7 +1,12 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
+
+def main():
     import urllib.request
     link = 'https://alx-intranet.hbtn.io/status'
     with urllib.request.urlopen(link) as response:
         html = response.read()
     print(html)
+
+
+if __name__ == "__main__":
+    main()
