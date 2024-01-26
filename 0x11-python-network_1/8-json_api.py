@@ -1,4 +1,9 @@
 #!/usr/bin/python3
-import urllib
-with urllib.request.urlopen('https://alx-intranet.hbtn.io/status') as response:
-  html = response.read()
+""" Task:
+"""
+import urllib.request
+import sys
+
+if __name__ == "__main__":
+    with urllib.request.urlopen(sys.argv[1]) as response:
+        print(response)
