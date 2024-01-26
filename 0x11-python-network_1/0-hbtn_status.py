@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+""" 0-hbtn"""
 import urllib.request
 if __name__ == "__main__":
     link = 'https://alx-intranet.hbtn.io/status'
