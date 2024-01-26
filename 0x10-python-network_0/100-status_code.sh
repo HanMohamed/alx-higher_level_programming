@@ -1,3 +1,3 @@
 #!/bin/bash
 #cURL body size
-curl -sI "$1" | grep -i HTTP | awk '{print $2}'
+curl -sIL "$1" -o /dev/null -w '%{http_code}\n'
