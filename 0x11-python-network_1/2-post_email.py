@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-""" 
+""" Task:
 """
 import urllib.request
 
 if __name__ == "__main__":
-    pass
+    with urllib.request.urlopen(sys.argv[1]) as response:
+      print(response)
