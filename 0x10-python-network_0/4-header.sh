@@ -1,2 +1,3 @@
 #!/bin/bash
-curl -s 
+#cURL Methodx
+curl -s "$1" -H "X-School-User-Id: 98"
