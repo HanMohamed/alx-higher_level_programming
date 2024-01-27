@@ -7,8 +7,8 @@ import sys
 
 if __name__ == "__main__":
     value = {'email' : sys.argv[2]}
-    byte_value = urllib.parse.urlencode(value)
-    byte_value = byte_value.encode('ascii')
+    # data should be bytes
+    byte_value = value.encode('ascii')
     req = urllib.request.Request(sys.argv[1], byte_value)
     with urllib.request.urlopen(req) as response:
         html = response.read()
