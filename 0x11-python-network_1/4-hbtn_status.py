@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-""" Task:
+""" Task: What's my status? #1
 """
-import urllib.request
-import sys
+import requests
 
 if __name__ == "__main__":
-    with urllib.request.urlopen(sys.argv[1]) as response:
-        print(response)
+    req = requests.get('https://alx-intranet.hbtn.io/status')
+    print("Body response:")
+    print("\t- type: {}".format(type(req)))
+    print("\t- content: {}".format(req))
