@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ Task:
 """
-import urllib.requests
+import urllib.request
 import sys
 
 if __name__ == "__main__":
