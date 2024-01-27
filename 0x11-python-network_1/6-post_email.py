@@ -7,9 +7,9 @@ import sys
 if __name__ == "__main__":
     value = {'email': sys.argv[2]}
     # data should be parsed first to be bytes
-    byte_value = requests.parse.urlencode(value)
+    # byte_value = requests.parse.urlencode(value)
     # data should be bytes
-    byte_value = byte_value.encode('ascii')
+    byte_value = value.encode('ascii')
     # passing arg means 'POST'
     req = requests.Request(sys.argv[1], byte_value)
     response = requests.get(req)
