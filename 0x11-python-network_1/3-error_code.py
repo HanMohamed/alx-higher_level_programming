@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Task:
+""" Error code #0
 """
 import urllib.request
 import sys
