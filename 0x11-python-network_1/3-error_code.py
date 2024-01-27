@@ -2,6 +2,7 @@
 """ Error code #0
 """
 import urllib.request
+import urllib.error
 import sys
 
 if __name__ == "__main__":
