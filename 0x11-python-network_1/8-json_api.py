@@ -9,9 +9,9 @@ import sys
 if __name__ == "__main__":
     link = "http://0.0.0.0:5000/search_user"
     req = requests.get(link)
-    #req = requests.post(link, data={'key': 'value'})
+    # req = requests.post(link, data={'key': 'value'})
 
-    #Check response body is JSON formatted
+    # Check response body is JSON formatted
     if (req.json):
         if (len(sys.argv) == 2 and (sys.argv[1].isalpha())):
             req = requests.post(link, data={'q': sys.argv[1]})
