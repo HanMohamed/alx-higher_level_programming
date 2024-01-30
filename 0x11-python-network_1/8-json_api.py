@@ -13,6 +13,7 @@ if __name__ == "__main__":
 
     #Check response body is JSON formatted
     if (req.json):
+        print(sys.argv[1])
         if (len(sys.argv) == 1):
             req = requests.post(link, data={'q': ''})
             print('No result')
