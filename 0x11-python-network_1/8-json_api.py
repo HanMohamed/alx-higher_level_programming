@@ -16,7 +16,7 @@ if __name__ == "__main__":
         if (len(sys.argv) == 1):
             req = requests.post(link, data={'q': ''})
             print('No result')
-        elif (isinstance(sys.argv[1],chr) and req.json):
+        elif (isinstance(sys.argv[1], chr) and req.json):
             req = requests.post(link, data={'q': sys.argv[1]})
             print("[{}] {}".format(req.content, req.text))
     else:
