@@ -18,6 +18,6 @@ if __name__ == "__main__":
             print('No result')
         elif (type(sys.argv[1] == chr) and req.json):
             req = requests.post(link, data={'q': sys.argv[1]})
-            print("[{}] {}".format(req.text))
+            print((req.text))
     else:
         print('Not a valid JSON')
