@@ -14,9 +14,11 @@ if __name__ == "__main__":
     if (len(sys.argv) == 2 and (sys.argv[1].isalpha())):
         q = sys.argv[1]
         req = requests.post(link, data={'q': q})
-        reponse = req.json()
-        print("[{}] {}".format(dict(reponse).get('id'), dict(reponse).get('name')))
+        try:
+            reponse = req.json()
+        except:
+            print('Not a valid JSON')
+        else:
+            print("[{}] {}".format(dict(reponse).get('id'), dict(reponse).get('name')))
     else:
             print('No result')
-    #else:
-    #   print('Not a valid JSON')
