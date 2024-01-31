@@ -9,6 +9,6 @@ if __name__ == "__main__":
     password = sys.argv[2]
     link = "https://api.github.com/user/" + username
     # req = requests.post(link, data={'key': 'value'})
-    req = requests.post(link, auth=(username, password))
+    req = requests.get(link, auth=(username, password))
     response = req.json()
     print((dict(response).get('id')))
