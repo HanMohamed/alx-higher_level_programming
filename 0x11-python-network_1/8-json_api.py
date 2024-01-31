@@ -16,9 +16,7 @@ if __name__ == "__main__":
         req = requests.post(link, data={'q': q})
         reponse = req.json()
         print("[{}] {}".format(dict(reponse).get('id'), dict(reponse).get('name')))
-
     else:
             print('No result')
     #else:
-    
     #   print('Not a valid JSON')
