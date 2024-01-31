@@ -5,10 +5,8 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    link = "https://docs.github.com/en/rest/users?apiVersion=2022-11-28"
+    link = "https://api.github.com/user"
     # req = requests.post(link, data={'key': 'value'})
-    username = sys.argv[1]
-    password = sys.argv[2]
-    head = {username, password}
+    head = {sys.argv[1], sys.argv[2]}
     req = requests.get(link, headers=head)
-    print("[{}] {}".format(dict(req).get('id')))
+    print((dict(req).get('id')))
