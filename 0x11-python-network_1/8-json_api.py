@@ -12,10 +12,11 @@ if __name__ == "__main__":
     # req = requests.post(link, data={'key': 'value'})
 
     # Check response body is JSON formatted
-    if (req.json):
+    if (req.json()):
         if (len(sys.argv) == 2 and (sys.argv[1].isalpha())):
-            req = requests.post(link, data={'q': sys.argv[1]})
-            print(dict(req.text))
+            q = sys.argv[1]
+            req = requests.post(link, data={'q': q})
+            print(req.text.find('id'))
             # print(dict(req.headers).get('name'))
 
         else:
