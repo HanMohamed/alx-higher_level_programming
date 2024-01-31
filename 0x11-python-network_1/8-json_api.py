@@ -15,7 +15,10 @@ if __name__ == "__main__":
     if (req.json):
         if (len(sys.argv) == 2 and (sys.argv[1].isalpha())):
             req = requests.post(link, data={'q': sys.argv[1]})
-            print(dict(req.text).get('id'))
+            print(req)
+            # print(dict(req.text).get('id'))
+            # print(dict(req.headers).get('name'))
+
         else:
             print('No result')
     else:
