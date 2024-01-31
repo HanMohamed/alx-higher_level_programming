@@ -12,7 +12,7 @@ if __name__ == "__main__":
     # req = requests.post(link, data={'key': 'value'})
 
     # Check response body is JSON formatted
-    if (req.json()):
+    if (req.json):
         if (len(sys.argv) == 2 and (sys.argv[1].isalpha())):
             q = sys.argv[1]
             req = requests.post(link, data={'q': q})
