@@ -7,7 +7,7 @@ import sys
 if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
-    link = "https://api.github.com/user/" + username
+    link = "https://api.github.com/users/" + username
     # req = requests.post(link, data={'key': 'value'})
     req = requests.get(link, auth=(username, password))
     response = req.json()
