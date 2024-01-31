@@ -15,8 +15,7 @@ if __name__ == "__main__":
         q = sys.argv[1]
         req = requests.post(link, data={'q': q})
         reponse = req.json()
-        print(dict(reponse).get('id'))
-            # print(dict(req.headers).get('name'))
+        print("[{}] {}".format(dict(reponse).get('id'), dict(reponse).get('name')))
 
     else:
             print('No result')
