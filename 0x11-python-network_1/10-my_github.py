@@ -8,4 +8,4 @@ if __name__ == "__main__":
     link = "https://api.github.com/applications/"+ sys.argv[1] + "/token"
     # req = requests.post(link, data={'key': 'value'})
     req = requests.post(link, headers={sys.argv[1]: sys.argv[2]})
-    print((dict(req).get('id')))
+    print((dict(req.json()).get('id')))
