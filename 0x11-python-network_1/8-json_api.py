@@ -16,9 +16,10 @@ if __name__ == "__main__":
         req = requests.post(link, data={'q': q})
         try:
             reponse = req.json()
-        except:
+        except NameError:
             print('Not a valid JSON')
         else:
-            print("[{}] {}".format(dict(reponse).get('id'), dict(reponse).get('name')))
+            print("[{}] {}".format(dict(reponse).get('id'),
+                                   dict(reponse).get('name')))
     else:
-            print('No result')
+        print('No result')
