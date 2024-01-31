@@ -5,7 +5,10 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    link = "https://api.github.com/applications/" + sys.argv[1] + "/token"
+    username = sys.argv[1]
+    password = sys.argv[2]
+    link = "https://api.github.com/user/"
     # req = requests.post(link, data={'key': 'value'})
-    req = requests.post(link, headers={sys.argv[1]: sys.argv[2]})
-    print((dict(req.json()).get('id')))
+    req = requests.post(link, auth=(username, password))
+    response = req.json()
+    print((dict(response).get('id')))
