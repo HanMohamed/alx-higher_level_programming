@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Write a program that prints all the names defined by the compiled module 
+# Write a program that prints all the names defined by the compiled module
 # hidden_4.pyc (please download it locally).
 
 # You should print one name per line, in alpha order
