@@ -1,4 +1,4 @@
-#!/usr/bin/python3.10
+#!/usr/bin/python3
 
 # Write a program that prints all the names defined by the compiled module 
 # hidden_4.pyc (please download it locally).
