@@ -1,0 +1,4 @@
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/Personal/ALX/alx-higher_level_programming/0x03-python-data_structures/cmake-build-debug/CMakeFiles/0x03_python_data_structures.dir
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/Personal/ALX/alx-higher_level_programming/0x03-python-data_structures/cmake-build-debug/CMakeFiles/100-print_python_list_info.dir
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/Personal/ALX/alx-higher_level_programming/0x03-python-data_structures/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/hanosh/Library/CloudStorage/OneDrive-SeattleUniversity/Personal/ALX/alx-higher_level_programming/0x03-python-data_structures/cmake-build-debug/CMakeFiles/rebuild_cache.dir

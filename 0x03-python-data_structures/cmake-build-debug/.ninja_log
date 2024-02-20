@@ -1,0 +1,5 @@
+# ninja log v5
+0	37	1694644697809648892	CMakeFiles/0x03_python_data_structures.dir/13-is_palindrome.c.o	68941d6b7f29d320
+1	155	1694643192352545703	CMakeFiles/0x03_python_data_structures.dir/13-main.c.o	44469350247e4b0f
+1	156	1694643192352603993	CMakeFiles/0x03_python_data_structures.dir/linked_lists.c.o	a85fdda7289a379a
+37	74	1694644697847052708	0x03_python_data_structures	e6f1888d3a1d023f
