@@ -16,5 +16,6 @@ if __name__ == "__main__":
     for name in names:
         if name.startswith("__"):
             names.remove(name)
-    print(names)
+    for name in names:
+        print(name)
     
