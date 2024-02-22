@@ -6,6 +6,6 @@
 def weight_average(my_list=[]):
     if not my_list:
         return 0
-    numerator = sum(map(lambda x,y: x[0] * y[1], my_list, my_list))
+    numerator = sum(map(lambda x, y: x[0] * y[1], my_list, my_list))
     denomerator = sum(map(lambda x: x[1], my_list))
     return numerator / denomerator
