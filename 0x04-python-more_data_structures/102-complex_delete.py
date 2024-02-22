@@ -9,6 +9,5 @@ def complex_delete(a_dictionary, value):
     if value not in all_values:
         return
     for i in range(0, len(all_values)):
-        print(all_values[i])
         if value == all_values[i]:
-            print(all_values[i])
+            del a_dictionary[i]
