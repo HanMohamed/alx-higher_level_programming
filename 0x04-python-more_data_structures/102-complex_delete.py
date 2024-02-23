@@ -6,8 +6,11 @@
 # You are not allowed to import any module
 def complex_delete(a_dictionary, value):
     all_values = list(a_dictionary.values())
+    all_keys = list(a_dictionary.keys())
+
     if value not in all_values:
-        return
+        return a_dictionary
     for i in range(0, len(all_values)):
         if value == all_values[i]:
-            del a_dictionary[i]
+            del [a_dictionary[all_keys[i]]]
+    return a_dictionary
