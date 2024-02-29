@@ -9,11 +9,12 @@
         - property def next_node(self): to retrieve it
         - property setter def next_node(self, value): to set it:
             - next_node can be None or must be a Node, otherwise raise a
-              TypeError exception with the message next_node must be a Node object
-    - Instantiation with data and next_node: 
+              TypeError exception with the message:
+              next_node must be a Node object
+    - Instantiation with data and next_node:
       def __init__(self, data, next_node=None):
 """
-    
+
 
 class Node:
     """ a class Node that defines a node of a singly linked list"""
@@ -28,13 +29,13 @@ class Node:
 
         self.data = data
         self.next_node = next_node
-    
+
     @property
     def data(self):
         """Retrieve data of node"""
 
         return self.__data
-    
+
     @data.setter
     def data(self, value):
         """A setter function to set data of a node"""
@@ -42,13 +43,13 @@ class Node:
         if not isinstance(value, int):
             raise TypeError("data must be an integer")
         self.__data = value
-    
+
     @property
     def next_node(self):
         """Retrieve next node"""
 
         return self.__next_node
-    
+
     @next_node.setter
     def next_node(self, value):
         """A setter function to set next node of a node"""
@@ -58,21 +59,20 @@ class Node:
         self.__next_node = value
 
 
-
 """ write a class SinglyLinkedList that defines a singly linked list by:
     - Private instance attribute: head (no setter or getter)
     - Simple instantiation: def __init__(self):
     - Should be printable:
         - print the entire list in stdout
         - one node number by line
-    - Public instance method: def sorted_insert(self, value): that inserts
-      a new Node into the correct sorted position in the list (increasing order)
+    - Public instance method: def sorted_insert(self, value): that inserts a
+      new Node into the correct sorted position in the list (increasing order)
 """
 
 
 class SinglyLinkedList:
     """a class SinglyLinkedList that defines a singly linked list"""
-    
+
     def __init__(self):
         """Initialize a new SinglyLinkedList"""
 
@@ -94,6 +94,7 @@ class SinglyLinkedList:
         """inserts a new Node into the correct sorted position
         in the list (increasing order)
         """
+
         new_node = Node(value, None)
         prev_curr = None
         curr_node = self.__head
@@ -109,4 +110,3 @@ class SinglyLinkedList:
                 break
         prev_curr.next_node = new_node
         new_node.next_node = curr_node
-        
