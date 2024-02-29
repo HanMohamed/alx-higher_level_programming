@@ -9,6 +9,8 @@
               with the message size must be >= 0
     - Instantiation with optional size: def __init__(self, size=0):
     - Public instance method: def area(self): returns the current square area
+    - Square instance can answer to comparators: ==, !=, >, >=, < and <=
+      based on the square area
 """
 
 
