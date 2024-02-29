@@ -14,11 +14,18 @@ class Node:
     """ a class Node that defines a node of a singly linked list"""
 
     def __init__(self, data, next_node=None):
+        """_summary_
+
+        Args:
+            data (_type_): _description_
+            next_node (_type_, optional): _description_. Defaults to None.
+        """
         self.data = data
         self.next_node = next_node
     
     @property
     def data(self):
+    
         return self.__data
     
     @data.setter
@@ -38,6 +45,7 @@ class Node:
         self.__next_node = value
 
 class SinglyLinkedList:
+    """a class SinglyLinkedList that defines a singly linked list """
     
     def __init__(self):
         self.__head = None
