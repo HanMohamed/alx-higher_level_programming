@@ -105,6 +105,6 @@ class SinglyLinkedList:
                 break
         if prev_curr is None:
             self.__head = new_node
-        else :    
+        else:
             prev_curr.next_node = new_node
         new_node.next_node = curr_node
