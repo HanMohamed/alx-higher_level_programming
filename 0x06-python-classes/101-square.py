@@ -105,5 +105,6 @@ class Square:
                 square_str += " "
             for j in range(0, self.__size):
                 square_str += "#"
-            square_str += "\n"
+            if (i != self.__size - 1):
+                square_str += "\n"
         return square_str
