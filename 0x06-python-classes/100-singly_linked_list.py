@@ -1,7 +1,18 @@
 #!/usr/bin/python3
+"""_summary_
+
+    Raises:
+        TypeError: _description_
+        TypeError: _description_
+
+    Returns:
+        _type_: _description_
+"""
+    
 
 class Node:
-    
+    """ a class Node that defines a node of a singly linked list"""
+
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
