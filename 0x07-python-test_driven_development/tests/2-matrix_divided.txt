@@ -26,8 +26,17 @@ Traceback (most recent call last):
 ...
 ZeroDivisionError: division by zero
 
+>>> matrix_divided(matrix, None)
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+>>> matrix_divided(matrix, float('inf'))
+[[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
 >>> matrix = [1, 2, 3]
 >>> matrix_divided(matrix, 1)
 Traceback (most recent call last):
 ...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
