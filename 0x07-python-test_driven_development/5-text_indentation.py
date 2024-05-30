@@ -13,9 +13,14 @@ def text_indentation(text):
     if type(text) is not str:
         raise TypeError("text must be a string")
 
-    for letter in text:
-        print(letter, end="")
-        if letter in ['.', '?', ':']:
+    i = 0
+    while i < len(text):
+        print(text[i], end="")
+        if text[i] in ['.', '?', ':']:
             print()
             print()
+            if i + 1 < len(text) and text[i + 1].isspace:
+                i += 1
+        i += 1
+
         
