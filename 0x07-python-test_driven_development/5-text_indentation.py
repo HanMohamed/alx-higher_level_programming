@@ -21,7 +21,6 @@ def text_indentation(text):
             print()
             if (i + 1 < len(text) and text[i + 1].isspace):
                 i += 1
-                continue
         i += 1
 
         
