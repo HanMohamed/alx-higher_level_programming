@@ -19,7 +19,7 @@ def text_indentation(text):
         if text[i] in ['.', '?', ':']:
             print()
             print()
-            if (i + 1 < len(text) and text[i + 1].isspace):
+            while (i + 1 < len(text) and text[i + 1].isspace):
                 i += 1
         i += 1
 
