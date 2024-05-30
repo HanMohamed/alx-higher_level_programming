@@ -17,6 +17,11 @@ Traceback (most recent call last):
 ...
 TypeError: size must be an integer
 
+>>> print_square("school")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
 >>> print_square()
 Traceback (most recent call last):
 ...
