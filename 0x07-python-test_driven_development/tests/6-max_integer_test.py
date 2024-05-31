@@ -20,6 +20,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
         self.assertEqual(max_integer([1, 3, 4, 7]), 7)
         self.assertEqual(max_integer([7, 3, 4, 2]), 7)
+        self.assertEqual(max_integer([4]), 4)
 
 
 if __name__ == '__main__':
