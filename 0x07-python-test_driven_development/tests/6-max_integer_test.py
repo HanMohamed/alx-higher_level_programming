@@ -19,8 +19,6 @@ class TestMaxInteger(unittest.TestCase):
     def test_max_integer(self):
         self.assertEqual(max_integer([1, 3, 4, 2]), 4)
 
-    def text_integer_list(self):
-        self.assertIsInstance(max_integer([1.2, 'school']), int)
 
 if __name__ == '__main__':
     unittest.main()
