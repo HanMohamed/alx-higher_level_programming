@@ -11,7 +11,7 @@ class Rectangle:
 
     number_of_instances = 0
     print_symbol = "#"
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """ rect_1 and rect_2 must be instance of rectangle class """
