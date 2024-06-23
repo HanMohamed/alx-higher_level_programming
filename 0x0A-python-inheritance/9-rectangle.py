@@ -13,7 +13,7 @@ class Rectangle(BaseGeometry):
     """
 
     def __init__(self, width, height):
-        """ private instantiation of attributes """
+        """ private instantiation """
 
         super().integer_validator('width', width)
         super().integer_validator('height', height)
