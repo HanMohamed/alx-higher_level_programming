@@ -36,37 +36,51 @@ Let's test the ``area`` method.
 Traceback (most recent call last):
 ...
 Exception: area() is not implemented
+
 Let's test with valid arguments to the ``integer_validator`` method.
+
 >>> base.integer_validator("age", 24)
+
 >>> base.integer_validator("number", 7)
+
 Let's test with non-integer value.
+
 >>> base.integer_validator("age", None)
 Traceback (most recent call last):
 ...
 TypeError: age must be an integer
+
 >>> base.integer_validator("age", [1, 2, 3])
 Traceback (most recent call last):
 ...
 TypeError: age must be an integer
+
 Let's test with values less than or equal to zero.
+
 >>> base.integer_validator("age", 0)
 Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
+
 >>> base.integer_validator("age", -7)
 Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
+
 Let's test the class by passing arguments while instantantiating.
+
 >>> base2 = BaseGeometry(13)
 Traceback (most recent call last):
 ...
 TypeError: BaseGeometry() takes no arguments
+
 Let's tes the method ``integer_validator`` by passing fewer arguments.
+
 >>> base.integer_validator("age")
 Traceback (most recent call last):
 ...
 TypeError: integer_validator() missing 1 required positional argument: 'value'
+
 >>> base.integer_validator()
 Traceback (most recent call last):
 ...
