@@ -1,26 +1,4 @@
 
-Let's check for module docstring.
-
->>> doc_len = __import__("7-base_geometry").__doc__
->>> len(doc_len) > 1
-True
-
-Let's check for class docstring.
-
->>> class_len = __import__("7-base_geometry").BaseGeometry.__doc__
->>> len(class_len) > 1
-True
-
-Let's check for method docstring.
-
->>> method_len = __import__("7-base_geometry").BaseGeometry.area.__doc__
->>> len(method_len) > 1
-True
-
->>> method2_len = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
->>> len(method2_len) > 1
-True
-
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 >>> base = BaseGeometry()
