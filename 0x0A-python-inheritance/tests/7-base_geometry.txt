@@ -4,6 +4,9 @@
 
 Let's test the type of object base
 
+>>> type(base)
+<class '7-base_geometry.BaseGeometry'>
+
 Let's test the ``area`` method.
 
 >>> base.area()
@@ -40,6 +43,13 @@ ValueError: age must be greater than 0
 Traceback (most recent call last):
 ...
 ValueError: age must be greater than 0
+
+Let's test the class by passing arguments while instantantiating.
+
+>>> base2 = BaseGeometry(13)
+Traceback (most recent call last):
+...
+TypeError: BaseGeometry() takes no arguments
 
 Let's tes the method ``integer_validator`` by passing fewer arguments.
 
