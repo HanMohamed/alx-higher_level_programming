@@ -13,7 +13,7 @@ try:
     loaded_obj = load_from_json_file(filename)
 except:
     loaded_obj = []
-    
+
 for args in sys.argv[1:]:
     loaded_obj.append(args)
 
