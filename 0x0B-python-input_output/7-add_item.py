@@ -11,7 +11,7 @@ filename = "add_item.json"
 
 try:
     loaded_obj = load_from_json_file(filename)
-except:
+except Exception:
     loaded_obj = []
 
 for args in sys.argv[1:]:
