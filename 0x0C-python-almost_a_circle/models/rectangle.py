@@ -13,14 +13,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    @id.setter
-    def id(self, id):
-        if type(id) is not int:
-            raise TypeError("id must be an integer")
-        if id <= 0:
-            raise ValueError("id must be > 0")
-        super().__init__(id)
-
     @property
     def width(self):
         return self.__width
@@ -71,3 +63,9 @@ class Rectangle(Base):
 
     def area(self):
         return self.__height * self.__width
+
+    def display(self):
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end='')
+            print()
